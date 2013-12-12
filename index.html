@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="normalize.css"/>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript" src="application.js"></script>
+</head>
+
+<div id="container">
+<header>
+        <h1><span id="hot">Hot</span> or <span id="cold">Cold</span>?</h1>
+</header>
+        <div id="contentbox">
+                <p>I have chosen a random number between 1 and 100. Can you guess it?</p>
+                <p>You have 10 chances to guess the random number!</p>
+                <p>If you guess incorrectly all of your personal belongings will be mine!</p>
+                <p>If you guess correctly, you will receive a pot of gold!</p>
+                <h4>Type your guess in the box below!</h4>
+                <form id="userform">
+                        <input type="text" id="inputbox" placeholder="Guess here!" min="1" max="100" maxlength="3"/>
+                        <input type="button" id="submit" value="Submit"/>
+                        <input type="button" id="newgame" value="New Game"/>
+                </form>
+
+                <div id="message">
+                </div>
+
+                <div id="guesses">Number of guesses:
+                </div>
+        </div>
+</div>
+</div>
+</html>
